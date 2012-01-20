@@ -49,16 +49,16 @@ Gem::Specification.new do |s|
       if ENV['TEST_RAILS_3_1']
         s.add_runtime_dependency(%q<activerecord>, [">= 3.1.0.rc4"])
       else
-        s.add_runtime_dependency(%q<activerecord>, [">= 2.0.0", "< 3.2"])
+        s.add_runtime_dependency(%q<activerecord>, [">= 2.0.0", "< 4.0"])
       end
       s.add_development_dependency(%q<rspec>, [">= 1.2.9"])
       s.add_development_dependency(%q<rake>)
     else
-      s.add_dependency(%q<activerecord>, [">= 2.0.0", "< 3.2"])
+      s.add_dependency(%q<activerecord>, [">= 2.0.0", "< 4.0"])
       s.add_dependency(%q<rspec>, [">= 1.2.9"])
     end
   else
-    s.add_dependency(%q<activerecord>, [">= 2.0.0", "< 3.2"])
+    s.add_dependency(%q<activerecord>, [">= 2.0.0", "< 4.0"])
     s.add_dependency(%q<rspec>, [">= 1.2.9"])
   end
 end
